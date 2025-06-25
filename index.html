@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chess Game (You vs Stockfish)</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css" />
+</head>
+<body>
+  <h2>Chess Game (You vs Best Move)</h2>
+  <label for="color">Choose your side:</label>
+  <select id="color">
+    <option value="white">White</option>
+    <option value="black">Black</option>
+  </select>
+  <button onclick="startGame()">Start Game</button>
+  <div id="board"></div>
+  <div id="info"></div>
+
+  <script src="https://unpkg.com/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/1.0.0/chess.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
